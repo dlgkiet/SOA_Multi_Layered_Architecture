@@ -8,8 +8,8 @@ using System.Globalization;
 var builder = WebApplication.CreateBuilder(args);
 
 // ✅ Bật hỗ trợ globalization
-//CultureInfo.DefaultThreadCurrentCulture = new CultureInfo("en-US");
-//CultureInfo.DefaultThreadCurrentUICulture = new CultureInfo("en-US");
+CultureInfo.DefaultThreadCurrentCulture = new CultureInfo("en-US");
+CultureInfo.DefaultThreadCurrentUICulture = new CultureInfo("en-US");
 
 // Đăng ký DbContext
 builder.Services.AddDbContext<AppDbContext>(options =>
