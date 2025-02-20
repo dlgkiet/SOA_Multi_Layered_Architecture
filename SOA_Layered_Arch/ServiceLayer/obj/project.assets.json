@@ -2844,19 +2844,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\dtlam\\.nuget\\packages\\": {}
+    "C:\\Users\\giaki\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\dtlam\\OneDrive\\Documents\\A Code\\Solution A\\SOA_Multi_Layered_Architecture\\SOA_Layered_Arch\\ServiceLayer\\ServiceLayer.csproj",
+      "projectUniqueName": "D:\\code\\SOA_Multi_Layered_Architecture\\SOA_Layered_Arch\\ServiceLayer\\ServiceLayer.csproj",
       "projectName": "ServiceLayer",
-      "projectPath": "C:\\Users\\dtlam\\OneDrive\\Documents\\A Code\\Solution A\\SOA_Multi_Layered_Architecture\\SOA_Layered_Arch\\ServiceLayer\\ServiceLayer.csproj",
-      "packagesPath": "C:\\Users\\dtlam\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\dtlam\\OneDrive\\Documents\\A Code\\Solution A\\SOA_Multi_Layered_Architecture\\SOA_Layered_Arch\\ServiceLayer\\obj\\",
+      "projectPath": "D:\\code\\SOA_Multi_Layered_Architecture\\SOA_Layered_Arch\\ServiceLayer\\ServiceLayer.csproj",
+      "packagesPath": "C:\\Users\\giaki\\.nuget\\packages\\",
+      "outputPath": "D:\\code\\SOA_Multi_Layered_Architecture\\SOA_Layered_Arch\\ServiceLayer\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\dtlam\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\giaki\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -2870,11 +2870,11 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\dtlam\\OneDrive\\Documents\\A Code\\Solution A\\SOA_Multi_Layered_Architecture\\SOA_Layered_Arch\\CoreLayer\\CoreLayer.csproj": {
-              "projectPath": "C:\\Users\\dtlam\\OneDrive\\Documents\\A Code\\Solution A\\SOA_Multi_Layered_Architecture\\SOA_Layered_Arch\\CoreLayer\\CoreLayer.csproj"
+            "D:\\code\\SOA_Multi_Layered_Architecture\\SOA_Layered_Arch\\CoreLayer\\CoreLayer.csproj": {
+              "projectPath": "D:\\code\\SOA_Multi_Layered_Architecture\\SOA_Layered_Arch\\CoreLayer\\CoreLayer.csproj"
             },
-            "C:\\Users\\dtlam\\OneDrive\\Documents\\A Code\\Solution A\\SOA_Multi_Layered_Architecture\\SOA_Layered_Arch\\DataAccessLayer\\DataAccessLayer.csproj": {
-              "projectPath": "C:\\Users\\dtlam\\OneDrive\\Documents\\A Code\\Solution A\\SOA_Multi_Layered_Architecture\\SOA_Layered_Arch\\DataAccessLayer\\DataAccessLayer.csproj"
+            "D:\\code\\SOA_Multi_Layered_Architecture\\SOA_Layered_Arch\\DataAccessLayer\\DataAccessLayer.csproj": {
+              "projectPath": "D:\\code\\SOA_Multi_Layered_Architecture\\SOA_Layered_Arch\\DataAccessLayer\\DataAccessLayer.csproj"
             }
           }
         }
@@ -2883,6 +2883,11 @@
         "warnAsError": [
           "NU1605"
         ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -2904,7 +2909,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

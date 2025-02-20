@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\dtlam\\OneDrive\\Documents\\A Code\\Solution A\\SOA_Multi_Layered_Architecture\\SOA_Layered_Arch\\CommonLayer\\CommonLayer.csproj": {}
+    "D:\\code\\SOA_Multi_Layered_Architecture\\SOA_Layered_Arch\\CommonLayer\\CommonLayer.csproj": {}
   },
   "projects": {
-    "C:\\Users\\dtlam\\OneDrive\\Documents\\A Code\\Solution A\\SOA_Multi_Layered_Architecture\\SOA_Layered_Arch\\CommonLayer\\CommonLayer.csproj": {
+    "D:\\code\\SOA_Multi_Layered_Architecture\\SOA_Layered_Arch\\CommonLayer\\CommonLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\dtlam\\OneDrive\\Documents\\A Code\\Solution A\\SOA_Multi_Layered_Architecture\\SOA_Layered_Arch\\CommonLayer\\CommonLayer.csproj",
+        "projectUniqueName": "D:\\code\\SOA_Multi_Layered_Architecture\\SOA_Layered_Arch\\CommonLayer\\CommonLayer.csproj",
         "projectName": "CommonLayer",
-        "projectPath": "C:\\Users\\dtlam\\OneDrive\\Documents\\A Code\\Solution A\\SOA_Multi_Layered_Architecture\\SOA_Layered_Arch\\CommonLayer\\CommonLayer.csproj",
-        "packagesPath": "C:\\Users\\dtlam\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\dtlam\\OneDrive\\Documents\\A Code\\Solution A\\SOA_Multi_Layered_Architecture\\SOA_Layered_Arch\\CommonLayer\\obj\\",
+        "projectPath": "D:\\code\\SOA_Multi_Layered_Architecture\\SOA_Layered_Arch\\CommonLayer\\CommonLayer.csproj",
+        "packagesPath": "C:\\Users\\giaki\\.nuget\\packages\\",
+        "outputPath": "D:\\code\\SOA_Multi_Layered_Architecture\\SOA_Layered_Arch\\CommonLayer\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\dtlam\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\giaki\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -34,6 +34,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -55,7 +60,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

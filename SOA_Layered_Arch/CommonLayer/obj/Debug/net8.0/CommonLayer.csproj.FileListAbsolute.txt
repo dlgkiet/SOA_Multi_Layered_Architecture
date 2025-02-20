@@ -10,3 +10,15 @@ C:\Users\dtlam\OneDrive\Documents\A Code\Solution A\SOA_Multi_Layered_Architectu
 C:\Users\dtlam\OneDrive\Documents\A Code\Solution A\SOA_Multi_Layered_Architecture\SOA_Layered_Arch\CommonLayer\obj\Debug\net8.0\refint\CommonLayer.dll
 C:\Users\dtlam\OneDrive\Documents\A Code\Solution A\SOA_Multi_Layered_Architecture\SOA_Layered_Arch\CommonLayer\obj\Debug\net8.0\CommonLayer.pdb
 C:\Users\dtlam\OneDrive\Documents\A Code\Solution A\SOA_Multi_Layered_Architecture\SOA_Layered_Arch\CommonLayer\obj\Debug\net8.0\ref\CommonLayer.dll
+D:\code\SOA_Multi_Layered_Architecture\SOA_Layered_Arch\CommonLayer\bin\Debug\net8.0\CommonLayer.deps.json
+D:\code\SOA_Multi_Layered_Architecture\SOA_Layered_Arch\CommonLayer\bin\Debug\net8.0\CommonLayer.dll
+D:\code\SOA_Multi_Layered_Architecture\SOA_Layered_Arch\CommonLayer\bin\Debug\net8.0\CommonLayer.pdb
+D:\code\SOA_Multi_Layered_Architecture\SOA_Layered_Arch\CommonLayer\obj\Debug\net8.0\CommonLayer.GeneratedMSBuildEditorConfig.editorconfig
+D:\code\SOA_Multi_Layered_Architecture\SOA_Layered_Arch\CommonLayer\obj\Debug\net8.0\CommonLayer.AssemblyInfoInputs.cache
+D:\code\SOA_Multi_Layered_Architecture\SOA_Layered_Arch\CommonLayer\obj\Debug\net8.0\CommonLayer.AssemblyInfo.cs
+D:\code\SOA_Multi_Layered_Architecture\SOA_Layered_Arch\CommonLayer\obj\Debug\net8.0\CommonLayer.csproj.CoreCompileInputs.cache
+D:\code\SOA_Multi_Layered_Architecture\SOA_Layered_Arch\CommonLayer\obj\Debug\net8.0\CommonLayer.sourcelink.json
+D:\code\SOA_Multi_Layered_Architecture\SOA_Layered_Arch\CommonLayer\obj\Debug\net8.0\CommonLayer.dll
+D:\code\SOA_Multi_Layered_Architecture\SOA_Layered_Arch\CommonLayer\obj\Debug\net8.0\refint\CommonLayer.dll
+D:\code\SOA_Multi_Layered_Architecture\SOA_Layered_Arch\CommonLayer\obj\Debug\net8.0\CommonLayer.pdb
+D:\code\SOA_Multi_Layered_Architecture\SOA_Layered_Arch\CommonLayer\obj\Debug\net8.0\ref\CommonLayer.dll

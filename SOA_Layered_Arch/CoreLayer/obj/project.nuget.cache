@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "3IApy+bx5f/HgjtkUqKjdhbV7VnQCvVPDZ5UH88gVmN/ZI69yFHxa9hv8PMOWliCUzDzSJEyRliqqklNJlpI+g==",
+  "dgSpecHash": "97OYTKqPLJOYa0Pvpa8IiR5/xjF9t49xlVJJWW+T3ZhbHBpUrHTKg+18AmPrRLypa9y7SB/W+0/i6aTBTv7M2A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\dtlam\\OneDrive\\Documents\\A Code\\Solution A\\SOA_Multi_Layered_Architecture\\SOA_Layered_Arch\\CoreLayer\\CoreLayer.csproj",
+  "projectFilePath": "D:\\code\\SOA_Multi_Layered_Architecture\\SOA_Layered_Arch\\CoreLayer\\CoreLayer.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
