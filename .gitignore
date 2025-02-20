@@ -1,1 +1,22 @@
 .vs/
+
+# Ignore build outputs
+*.dll
+*.exe
+*.pdb
+*.cache
+*.csproj.AssemblyReference.cache
+
+# Ignore obj and bin folders
+bin/
+obj/
+
+# Ignore VSCode and Rider settings
+.vscode/
+.idea/
+
+# Ignore user-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.cache

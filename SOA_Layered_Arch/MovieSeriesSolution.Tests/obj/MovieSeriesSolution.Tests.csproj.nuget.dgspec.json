@@ -1,0 +1,375 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\dtlam\\OneDrive\\Documents\\A Code\\Solution A\\SOA_Multi_Layered_Architecture\\SOA_Layered_Arch\\MovieSeriesSolution.Tests\\MovieSeriesSolution.Tests.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\dtlam\\OneDrive\\Documents\\A Code\\Solution A\\SOA_Multi_Layered_Architecture\\SOA_Layered_Arch\\API\\API.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\dtlam\\OneDrive\\Documents\\A Code\\Solution A\\SOA_Multi_Layered_Architecture\\SOA_Layered_Arch\\API\\API.csproj",
+        "projectName": "API",
+        "projectPath": "C:\\Users\\dtlam\\OneDrive\\Documents\\A Code\\Solution A\\SOA_Multi_Layered_Architecture\\SOA_Layered_Arch\\API\\API.csproj",
+        "packagesPath": "C:\\Users\\dtlam\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\dtlam\\OneDrive\\Documents\\A Code\\Solution A\\SOA_Multi_Layered_Architecture\\SOA_Layered_Arch\\API\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\dtlam\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\dtlam\\OneDrive\\Documents\\A Code\\Solution A\\SOA_Multi_Layered_Architecture\\SOA_Layered_Arch\\DataAccessLayer\\DataAccessLayer.csproj": {
+                "projectPath": "C:\\Users\\dtlam\\OneDrive\\Documents\\A Code\\Solution A\\SOA_Multi_Layered_Architecture\\SOA_Layered_Arch\\DataAccessLayer\\DataAccessLayer.csproj"
+              },
+              "C:\\Users\\dtlam\\OneDrive\\Documents\\A Code\\Solution A\\SOA_Multi_Layered_Architecture\\SOA_Layered_Arch\\ServiceLayer\\ServiceLayer.csproj": {
+                "projectPath": "C:\\Users\\dtlam\\OneDrive\\Documents\\A Code\\Solution A\\SOA_Multi_Layered_Architecture\\SOA_Layered_Arch\\ServiceLayer\\ServiceLayer.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.0.2, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[9.0.2, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.4.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\dtlam\\OneDrive\\Documents\\A Code\\Solution A\\SOA_Multi_Layered_Architecture\\SOA_Layered_Arch\\CoreLayer\\CoreLayer.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\dtlam\\OneDrive\\Documents\\A Code\\Solution A\\SOA_Multi_Layered_Architecture\\SOA_Layered_Arch\\CoreLayer\\CoreLayer.csproj",
+        "projectName": "CoreLayer",
+        "projectPath": "C:\\Users\\dtlam\\OneDrive\\Documents\\A Code\\Solution A\\SOA_Multi_Layered_Architecture\\SOA_Layered_Arch\\CoreLayer\\CoreLayer.csproj",
+        "packagesPath": "C:\\Users\\dtlam\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\dtlam\\OneDrive\\Documents\\A Code\\Solution A\\SOA_Multi_Layered_Architecture\\SOA_Layered_Arch\\CoreLayer\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\dtlam\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.0.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\dtlam\\OneDrive\\Documents\\A Code\\Solution A\\SOA_Multi_Layered_Architecture\\SOA_Layered_Arch\\DataAccessLayer\\DataAccessLayer.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\dtlam\\OneDrive\\Documents\\A Code\\Solution A\\SOA_Multi_Layered_Architecture\\SOA_Layered_Arch\\DataAccessLayer\\DataAccessLayer.csproj",
+        "projectName": "DataAccessLayer",
+        "projectPath": "C:\\Users\\dtlam\\OneDrive\\Documents\\A Code\\Solution A\\SOA_Multi_Layered_Architecture\\SOA_Layered_Arch\\DataAccessLayer\\DataAccessLayer.csproj",
+        "packagesPath": "C:\\Users\\dtlam\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\dtlam\\OneDrive\\Documents\\A Code\\Solution A\\SOA_Multi_Layered_Architecture\\SOA_Layered_Arch\\DataAccessLayer\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\dtlam\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\dtlam\\OneDrive\\Documents\\A Code\\Solution A\\SOA_Multi_Layered_Architecture\\SOA_Layered_Arch\\CoreLayer\\CoreLayer.csproj": {
+                "projectPath": "C:\\Users\\dtlam\\OneDrive\\Documents\\A Code\\Solution A\\SOA_Multi_Layered_Architecture\\SOA_Layered_Arch\\CoreLayer\\CoreLayer.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[9.0.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\dtlam\\OneDrive\\Documents\\A Code\\Solution A\\SOA_Multi_Layered_Architecture\\SOA_Layered_Arch\\MovieSeriesSolution.Tests\\MovieSeriesSolution.Tests.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\dtlam\\OneDrive\\Documents\\A Code\\Solution A\\SOA_Multi_Layered_Architecture\\SOA_Layered_Arch\\MovieSeriesSolution.Tests\\MovieSeriesSolution.Tests.csproj",
+        "projectName": "MovieSeriesSolution.Tests",
+        "projectPath": "C:\\Users\\dtlam\\OneDrive\\Documents\\A Code\\Solution A\\SOA_Multi_Layered_Architecture\\SOA_Layered_Arch\\MovieSeriesSolution.Tests\\MovieSeriesSolution.Tests.csproj",
+        "packagesPath": "C:\\Users\\dtlam\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\dtlam\\OneDrive\\Documents\\A Code\\Solution A\\SOA_Multi_Layered_Architecture\\SOA_Layered_Arch\\MovieSeriesSolution.Tests\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\dtlam\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\dtlam\\OneDrive\\Documents\\A Code\\Solution A\\SOA_Multi_Layered_Architecture\\SOA_Layered_Arch\\API\\API.csproj": {
+                "projectPath": "C:\\Users\\dtlam\\OneDrive\\Documents\\A Code\\Solution A\\SOA_Multi_Layered_Architecture\\SOA_Layered_Arch\\API\\API.csproj"
+              },
+              "C:\\Users\\dtlam\\OneDrive\\Documents\\A Code\\Solution A\\SOA_Multi_Layered_Architecture\\SOA_Layered_Arch\\CoreLayer\\CoreLayer.csproj": {
+                "projectPath": "C:\\Users\\dtlam\\OneDrive\\Documents\\A Code\\Solution A\\SOA_Multi_Layered_Architecture\\SOA_Layered_Arch\\CoreLayer\\CoreLayer.csproj"
+              },
+              "C:\\Users\\dtlam\\OneDrive\\Documents\\A Code\\Solution A\\SOA_Multi_Layered_Architecture\\SOA_Layered_Arch\\DataAccessLayer\\DataAccessLayer.csproj": {
+                "projectPath": "C:\\Users\\dtlam\\OneDrive\\Documents\\A Code\\Solution A\\SOA_Multi_Layered_Architecture\\SOA_Layered_Arch\\DataAccessLayer\\DataAccessLayer.csproj"
+              },
+              "C:\\Users\\dtlam\\OneDrive\\Documents\\A Code\\Solution A\\SOA_Multi_Layered_Architecture\\SOA_Layered_Arch\\ServiceLayer\\ServiceLayer.csproj": {
+                "projectPath": "C:\\Users\\dtlam\\OneDrive\\Documents\\A Code\\Solution A\\SOA_Multi_Layered_Architecture\\SOA_Layered_Arch\\ServiceLayer\\ServiceLayer.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[17.14.0-preview-25107-01, )"
+            },
+            "Moq": {
+              "target": "Package",
+              "version": "[4.20.72, )"
+            },
+            "coverlet.collector": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.4, )"
+            },
+            "xunit": {
+              "target": "Package",
+              "version": "[2.9.3, )"
+            },
+            "xunit.runner.visualstudio": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.0.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\dtlam\\OneDrive\\Documents\\A Code\\Solution A\\SOA_Multi_Layered_Architecture\\SOA_Layered_Arch\\ServiceLayer\\ServiceLayer.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\dtlam\\OneDrive\\Documents\\A Code\\Solution A\\SOA_Multi_Layered_Architecture\\SOA_Layered_Arch\\ServiceLayer\\ServiceLayer.csproj",
+        "projectName": "ServiceLayer",
+        "projectPath": "C:\\Users\\dtlam\\OneDrive\\Documents\\A Code\\Solution A\\SOA_Multi_Layered_Architecture\\SOA_Layered_Arch\\ServiceLayer\\ServiceLayer.csproj",
+        "packagesPath": "C:\\Users\\dtlam\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\dtlam\\OneDrive\\Documents\\A Code\\Solution A\\SOA_Multi_Layered_Architecture\\SOA_Layered_Arch\\ServiceLayer\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\dtlam\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\dtlam\\OneDrive\\Documents\\A Code\\Solution A\\SOA_Multi_Layered_Architecture\\SOA_Layered_Arch\\CoreLayer\\CoreLayer.csproj": {
+                "projectPath": "C:\\Users\\dtlam\\OneDrive\\Documents\\A Code\\Solution A\\SOA_Multi_Layered_Architecture\\SOA_Layered_Arch\\CoreLayer\\CoreLayer.csproj"
+              },
+              "C:\\Users\\dtlam\\OneDrive\\Documents\\A Code\\Solution A\\SOA_Multi_Layered_Architecture\\SOA_Layered_Arch\\DataAccessLayer\\DataAccessLayer.csproj": {
+                "projectPath": "C:\\Users\\dtlam\\OneDrive\\Documents\\A Code\\Solution A\\SOA_Multi_Layered_Architecture\\SOA_Layered_Arch\\DataAccessLayer\\DataAccessLayer.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.0.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
