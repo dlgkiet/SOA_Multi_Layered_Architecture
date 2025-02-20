@@ -1,0 +1,12 @@
+C:\Users\dtlam\OneDrive\Documents\A Code\Solution A\SOA_Multi_Layered_Architecture\SOA_Layered_Arch\CommonLayer\bin\Debug\net8.0\CommonLayer.deps.json
+C:\Users\dtlam\OneDrive\Documents\A Code\Solution A\SOA_Multi_Layered_Architecture\SOA_Layered_Arch\CommonLayer\bin\Debug\net8.0\CommonLayer.dll
+C:\Users\dtlam\OneDrive\Documents\A Code\Solution A\SOA_Multi_Layered_Architecture\SOA_Layered_Arch\CommonLayer\bin\Debug\net8.0\CommonLayer.pdb
+C:\Users\dtlam\OneDrive\Documents\A Code\Solution A\SOA_Multi_Layered_Architecture\SOA_Layered_Arch\CommonLayer\obj\Debug\net8.0\CommonLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dtlam\OneDrive\Documents\A Code\Solution A\SOA_Multi_Layered_Architecture\SOA_Layered_Arch\CommonLayer\obj\Debug\net8.0\CommonLayer.AssemblyInfoInputs.cache
+C:\Users\dtlam\OneDrive\Documents\A Code\Solution A\SOA_Multi_Layered_Architecture\SOA_Layered_Arch\CommonLayer\obj\Debug\net8.0\CommonLayer.AssemblyInfo.cs
+C:\Users\dtlam\OneDrive\Documents\A Code\Solution A\SOA_Multi_Layered_Architecture\SOA_Layered_Arch\CommonLayer\obj\Debug\net8.0\CommonLayer.csproj.CoreCompileInputs.cache
+C:\Users\dtlam\OneDrive\Documents\A Code\Solution A\SOA_Multi_Layered_Architecture\SOA_Layered_Arch\CommonLayer\obj\Debug\net8.0\CommonLayer.sourcelink.json
+C:\Users\dtlam\OneDrive\Documents\A Code\Solution A\SOA_Multi_Layered_Architecture\SOA_Layered_Arch\CommonLayer\obj\Debug\net8.0\CommonLayer.dll
+C:\Users\dtlam\OneDrive\Documents\A Code\Solution A\SOA_Multi_Layered_Architecture\SOA_Layered_Arch\CommonLayer\obj\Debug\net8.0\refint\CommonLayer.dll
+C:\Users\dtlam\OneDrive\Documents\A Code\Solution A\SOA_Multi_Layered_Architecture\SOA_Layered_Arch\CommonLayer\obj\Debug\net8.0\CommonLayer.pdb
+C:\Users\dtlam\OneDrive\Documents\A Code\Solution A\SOA_Multi_Layered_Architecture\SOA_Layered_Arch\CommonLayer\obj\Debug\net8.0\ref\CommonLayer.dll

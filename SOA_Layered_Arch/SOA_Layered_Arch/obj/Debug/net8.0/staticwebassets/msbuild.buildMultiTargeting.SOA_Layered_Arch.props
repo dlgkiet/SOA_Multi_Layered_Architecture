@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\SOA_Layered_Arch.props" />
+</Project>
