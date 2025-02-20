@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SOA_Layered_Arch")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d0886df5e215c4c86df7b7aaf70d8453b34b260f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+85c6b5e124d1935fd128991ea497d67cbab0ffe6")]
 [assembly: System.Reflection.AssemblyProductAttribute("SOA_Layered_Arch")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SOA_Layered_Arch")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
