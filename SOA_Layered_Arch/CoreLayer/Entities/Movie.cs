@@ -1,8 +1,6 @@
-﻿using MovieDatabase.Models;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations.Schema;
+﻿using System;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace SOA_Layered_Arch.CoreLayer.Entities
 {
@@ -35,7 +33,5 @@ namespace SOA_Layered_Arch.CoreLayer.Entities
 
         public string Description { get; set; }
 
-        // Navigation property
-        public ICollection<MovieSeries> MovieSeries { get; set; }
     }
 }
