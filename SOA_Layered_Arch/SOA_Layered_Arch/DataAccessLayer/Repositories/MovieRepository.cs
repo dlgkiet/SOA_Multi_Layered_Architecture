@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace SOA_Layered_Arch.DataAccessLayer.Repositories
 {
-    public class MovieRepository
+    public class MovieRepository : IRepository<Movie>
     {
         private readonly AppDbContext _context;
 
@@ -16,7 +16,7 @@ namespace SOA_Layered_Arch.DataAccessLayer.Repositories
         }
 
         // Lấy danh sách tất cả phim
-        public async Task<IEnumerable<Movie>> GetAllMoviesAsync()
+        public async Task<IEnumerable<Movie>> GetAllAsync()
         {
             return await _context.Movies.ToListAsync();
         }
@@ -30,13 +30,13 @@ namespace SOA_Layered_Arch.DataAccessLayer.Repositories
         }
 
         // Lấy phim theo ID
-        public async Task<Movie> GetMovieByIdAsync(int id)
+        public async Task<Movie> GetByIdAsync(int id)
         {
             return await _context.Movies.FindAsync(id);
         }
 
         // Thêm phim mới
-        public async Task<Movie> AddMovieAsync(Movie movie)
+        public async Task<Movie> AddAsync(Movie movie)
         {
             await _context.Movies.AddAsync(movie);
             await _context.SaveChangesAsync();
@@ -44,7 +44,7 @@ namespace SOA_Layered_Arch.DataAccessLayer.Repositories
         }
 
         // Cập nhật phim
-        public async Task<Movie> UpdateMovieAsync(Movie movie)
+        public async Task<Movie> UpdateAsync(Movie movie)
         {
             var existingMovie = await _context.Movies.FindAsync(movie.Id);
             if (existingMovie == null)
@@ -56,7 +56,7 @@ namespace SOA_Layered_Arch.DataAccessLayer.Repositories
         }
 
         // Xóa phim theo ID
-        public async Task<bool> DeleteMovieAsync(int id)
+        public async Task<bool> DeleteAsync(int id)
         {
             var movie = await _context.Movies.FindAsync(id);
             if (movie == null)
@@ -68,3 +68,4 @@ namespace SOA_Layered_Arch.DataAccessLayer.Repositories
         }
     }
 }
+
