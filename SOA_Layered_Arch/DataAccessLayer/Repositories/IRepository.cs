@@ -1,18 +1,15 @@
-﻿using SOA_Layered_Arch.CoreLayer.Entities;
-
+﻿using System.Collections.Generic;
+using System.Threading;
+using System.Threading.Tasks;
 
 namespace SOA_Layered_Arch.DataAccessLayer.Repositories
 {
-    // Interface chung cho tất cả các repository
     public interface IRepository<T> where T : class
     {
-        Task<IEnumerable<T>> GetAllAsync();
-        Task<T> GetByIdAsync(int id);
-        Task<T> AddAsync(T entity);
-        Task<T> UpdateAsync(T entity);
-        Task<bool> DeleteAsync(int id);
-
-        // Sửa lại GetTopRatedMoviesWithSpAsync để nhận int và trả về IEnumerable<Movie>
-        Task<IEnumerable<Movie>> GetTopRatedMoviesWithSpAsync(int topCount);
+        Task<IEnumerable<T>> GetAllAsync(CancellationToken cancellationToken = default);
+        Task<T?> GetByIdAsync(int id, CancellationToken cancellationToken = default);
+        Task<T> AddAsync(T entity, CancellationToken cancellationToken = default);
+        Task<T?> UpdateAsync(T entity, CancellationToken cancellationToken = default);
+        Task<bool> DeleteAsync(int id, CancellationToken cancellationToken = default);
     }
 }

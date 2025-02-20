@@ -1,7 +1,8 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using SOA_Layered_Arch.CoreLayer.Entities;
+using System;
 using System.Collections.Generic;
-using System.Linq;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace SOA_Layered_Arch.DataAccessLayer.Repositories
@@ -15,50 +16,54 @@ namespace SOA_Layered_Arch.DataAccessLayer.Repositories
             _context = context;
         }
 
-        public async Task<IEnumerable<Movie>> GetAllAsync()
+        // Lấy danh sách tất cả Movie
+        public async Task<IEnumerable<Movie>> GetAllAsync(CancellationToken cancellationToken = default)
         {
-            return await _context.Movies.ToListAsync();
+            return await _context.Movies.AsNoTracking().ToListAsync(cancellationToken);
         }
 
-        public async Task<Movie> GetByIdAsync(int id)
+        // Lấy Movie theo ID
+        public async Task<Movie?> GetByIdAsync(int id, CancellationToken cancellationToken = default)
         {
-            return await _context.Movies.FirstOrDefaultAsync(m => m.Id == id);
+            return await _context.Movies.AsNoTracking().FirstOrDefaultAsync(m => m.Id == id, cancellationToken);
         }
 
-        public async Task<Movie> AddAsync(Movie movie)
+        // Thêm một Movie
+        public async Task<Movie> AddAsync(Movie movie, CancellationToken cancellationToken = default)
         {
-            _context.Movies.Add(movie);
-            await _context.SaveChangesAsync();
+            if (movie == null)
+                throw new ArgumentNullException(nameof(movie));
+
+            await _context.Movies.AddAsync(movie, cancellationToken);
+            await _context.SaveChangesAsync(cancellationToken);
             return movie;
         }
 
-        public async Task<Movie> UpdateAsync(Movie movie)
+        // Cập nhật thông tin Movie
+        public async Task<Movie?> UpdateAsync(Movie movie, CancellationToken cancellationToken = default)
         {
-            var existingMovie = await _context.Movies.FindAsync(movie.Id);
+            if (movie == null)
+                throw new ArgumentNullException(nameof(movie));
+
+            var existingMovie = await _context.Movies.FindAsync(new object[] { movie.Id }, cancellationToken);
             if (existingMovie == null)
                 return null;
 
             _context.Entry(existingMovie).CurrentValues.SetValues(movie);
-            await _context.SaveChangesAsync();
+            await _context.SaveChangesAsync(cancellationToken);
             return existingMovie;
         }
 
-        public async Task<bool> DeleteAsync(int id)
+        // Xóa một Movie theo ID
+        public async Task<bool> DeleteAsync(int id, CancellationToken cancellationToken = default)
         {
-            var movie = await _context.Movies.FindAsync(id);
+            var movie = await _context.Movies.FindAsync(new object[] { id }, cancellationToken);
             if (movie == null)
                 return false;
 
             _context.Movies.Remove(movie);
-            await _context.SaveChangesAsync();
+            await _context.SaveChangesAsync(cancellationToken);
             return true;
-        }
-
-        public async Task<IEnumerable<Movie>> GetTopRatedMoviesWithSpAsync(int topCount)
-        {
-            return await _context.Movies
-                .FromSqlRaw("EXEC GetTopRatedMovies @top_count = {0}", topCount)
-                .ToListAsync();
         }
     }
 }
