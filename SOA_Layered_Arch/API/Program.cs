@@ -18,10 +18,15 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 // Đăng ký Repository
 builder.Services.AddScoped<IRepository<Movie>, MovieRepository>();
 builder.Services.AddScoped<IRepository<MovieSeriesTag>, MovieSeriesTagRepository>();
+builder.Services.AddScoped<IRepository<Rating>, RatingRepository>();
+builder.Services.AddScoped<IRepository<Review>, ReviewRepository>();
 
 // Đăng ký Service
 builder.Services.AddScoped<MovieService>();
 builder.Services.AddScoped<MovieSeriesTagService>();
+builder.Services.AddScoped<RatingService>();
+builder.Services.AddScoped<ReviewService>();
+
 
 // Cấu hình Controller và Swagger
 builder.Services.AddControllers();
