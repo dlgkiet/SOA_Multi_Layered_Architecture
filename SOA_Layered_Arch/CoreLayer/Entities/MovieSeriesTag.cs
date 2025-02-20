@@ -1,24 +1,23 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using MovieDatabase.Models;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace SOA_Layered_Arch.CoreLayer.Entities
 {
+    [Table("MovieSeriesTags")]
     public class MovieSeriesTag
     {
-        [Key]
-        public int Id { get; set; } // Khóa chính tự động
+        [Key, Column(Order = 0)]
+        public int MovieSeriesId { get; set; }
 
-        [Required]
-        public int MovieId { get; set; } // Liên kết với bảng Movie
+        [Key, Column(Order = 1)]
+        public int TagId { get; set; }
 
-        [Required]
-        public int TagId { get; set; } // Liên kết với bảng Tag
-
-        // Navigation Properties
-        [ForeignKey("MovieId")]
-        public virtual Movie Movie { get; set; }
+        // Navigation properties
+        [ForeignKey("MovieSeriesId")]
+        public MovieSeries MovieSeries { get; set; }
 
         [ForeignKey("TagId")]
-        public virtual Tag Tag { get; set; }
+        public Tag Tag { get; set; }
     }
 }

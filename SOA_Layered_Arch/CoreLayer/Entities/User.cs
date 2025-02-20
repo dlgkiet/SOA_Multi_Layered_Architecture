@@ -5,29 +5,26 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace SOA_Layered_Arch.CoreLayer.Entities
 {
+    [Table("Users")]
     public class User
     {
         [Key]
-        public int Id { get; set; } // Khóa chính
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        public int UserId { get; set; }
 
         [Required]
         [MaxLength(50)]
-        public string Username { get; set; } // Tên đăng nhập
+        public string Username { get; set; }
 
         [Required]
+        [EmailAddress]
         [MaxLength(100)]
-        [EmailAddress] // Đảm bảo định dạng email hợp lệ
-        public string Email { get; set; } // Địa chỉ email
+        public string Email { get; set; }
 
-        [Required]
-        [MaxLength(255)]
-        public string PasswordHash { get; set; } // Mật khẩu đã mã hóa
+        public DateTime CreatedAt { get; set; } = DateTime.Now;
 
-        [Required]
-        public DateTime CreatedAt { get; set; } = DateTime.UtcNow; // Ngày tạo tài khoản
-
-        // Navigation Properties
-        public virtual ICollection<Review> Reviews { get; set; } // Liên kết với Review
-        public virtual ICollection<Rating> Ratings { get; set; } // Liên kết với Rating
+        // Navigation properties
+        public ICollection<Review> Reviews { get; set; }
+        public ICollection<Rating> Ratings { get; set; }
     }
 }

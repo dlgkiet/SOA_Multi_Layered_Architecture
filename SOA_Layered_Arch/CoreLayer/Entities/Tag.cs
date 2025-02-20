@@ -1,18 +1,21 @@
 ﻿using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace SOA_Layered_Arch.CoreLayer.Entities
 {
+    [Table("Tags")]
     public class Tag
     {
         [Key]
-        public int Id { get; set; } // Khóa chính
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        public int TagId { get; set; }
 
         [Required]
-        [MaxLength(50)] // Giới hạn độ dài tên Tag
-        public string Name { get; set; } // Tên của Tag (Ví dụ: Action, Comedy)
+        [MaxLength(50)]
+        public string TagName { get; set; }
 
-        // Navigation Property
-        public virtual ICollection<MovieSeriesTag> MovieSeriesTags { get; set; }
+        // Navigation properties
+        public ICollection<MovieSeriesTag> MovieSeriesTags { get; set; }
     }
 }

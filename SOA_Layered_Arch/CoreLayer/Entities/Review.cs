@@ -1,12 +1,32 @@
-﻿namespace SOA_Layered_Arch.CoreLayer.Entities
+﻿using MovieDatabase.Models;
+using System.ComponentModel.DataAnnotations.Schema;
+using System.ComponentModel.DataAnnotations;
+
+namespace SOA_Layered_Arch.CoreLayer.Entities
 {
-   
-        public class Review
-        {
-            public int Id { get; set; }
-            public int MovieId { get; set; }
-            public int UserId { get; set; }
-            public string ReviewText { get; set; }
-            public DateTime ReviewDate { get; set; }
-        }
+
+    [Table("Reviews")]
+    public class Review
+    {
+        [Key]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        public int ReviewId { get; set; }
+
+        [Required]
+        public int UserId { get; set; }
+
+        [Required]
+        public int MovieSeriesId { get; set; }
+
+        public string ReviewText { get; set; }
+
+        public DateTime ReviewDate { get; set; } = DateTime.Now;
+
+        // Navigation properties
+        [ForeignKey("UserId")]
+        public User User { get; set; }
+
+        [ForeignKey("MovieSeriesId")]
+        public MovieSeries MovieSeries { get; set; }
+    }
 }

@@ -1,29 +1,41 @@
-﻿using System;
+﻿using MovieDatabase.Models;
+using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
+using System.ComponentModel.DataAnnotations;
 
 namespace SOA_Layered_Arch.CoreLayer.Entities
 {
+    [Table("Movies")]
     public class Movie
     {
-        public int Id { get; set; }  // PRIMARY KEY
+        [Key]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        public int Id { get; set; }
 
-        public string Title { get; set; }  // NOT NULL
+        [Required]
+        [MaxLength(100)]
+        public string Title { get; set; }
 
-        public string? Genre { get; set; }  // Có thể NULL
+        [MaxLength(50)]
+        public string Genre { get; set; }
 
-        public DateTime? ReleaseDate { get; set; }  // Có thể NULL
+        public DateTime? ReleaseDate { get; set; }
 
-        public string? Director { get; set; }  // Đạo diễn (có thể NULL)
+        [MaxLength(100)]
+        public string Director { get; set; }
 
-        public int? Duration { get; set; }  // Thời lượng phim (có thể NULL)
+        public int? Duration { get; set; } // Thời lượng phim (phút)
 
-        public string? Language { get; set; }  // Ngôn ngữ (có thể NULL)
+        [MaxLength(50)]
+        public string Language { get; set; }
 
-        public string? Country { get; set; }  // Quốc gia (có thể NULL)
+        [MaxLength(100)]
+        public string Country { get; set; }
 
-        public string? Description { get; set; }  // Mô tả phim (có thể NULL)
+        public string Description { get; set; }
 
-        // Quan hệ 1-n với MovieSeriesTag (nếu có)
-        public ICollection<MovieSeriesTag>? MovieSeriesTags { get; set; }
+        // Navigation property
+        public ICollection<MovieSeries> MovieSeries { get; set; }
     }
 }

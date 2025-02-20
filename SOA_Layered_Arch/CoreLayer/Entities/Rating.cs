@@ -1,25 +1,31 @@
 ﻿using System.ComponentModel.DataAnnotations.Schema;
 using System.ComponentModel.DataAnnotations;
+using MovieDatabase.Models;
 
 namespace SOA_Layered_Arch.CoreLayer.Entities
 {
+    [Table("Ratings")]
     public class Rating
     {
         [Key]
-        public int Id { get; set; } // Khóa chính
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        public int RatingId { get; set; }
 
         [Required]
-        public int MovieId { get; set; } // Liên kết với Movie
+        public int UserId { get; set; }
 
         [Required]
-        public int UserId { get; set; } // Liên kết với User
+        public int MovieSeriesId { get; set; }
 
         [Required]
-        [Range(0, 10)] // Giới hạn giá trị từ 0 - 10
-        public decimal Value { get; set; } // Điểm đánh giá
+        [Range(0, 10)]
+        public decimal RatingValue { get; set; }
 
-        [Required]
-        public DateTime CreatedAt { get; set; } = DateTime.UtcNow; // Thời gian đánh giá
-        
+        // Navigation properties
+        [ForeignKey("UserId")]
+        public User User { get; set; }
+
+        [ForeignKey("MovieSeriesId")]
+        public MovieSeries MovieSeries { get; set; }
     }
 }
