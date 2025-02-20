@@ -9,7 +9,8 @@
       "ServiceLayer/1.0.0": {
         "dependencies": {
           "CoreLayer": "1.0.0",
-          "DataAccessLayer": "1.0.0"
+          "DataAccessLayer": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "9.0.2"
         },
         "runtime": {
           "ServiceLayer.dll": {}
@@ -616,6 +617,9 @@
         }
       },
       "CoreLayer/1.0.0": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "9.0.2"
+        },
         "runtime": {
           "CoreLayer.dll": {}
         }
@@ -623,7 +627,6 @@
       "DataAccessLayer/1.0.0": {
         "dependencies": {
           "CoreLayer": "1.0.0",
-          "Microsoft.EntityFrameworkCore": "9.0.2",
           "Microsoft.EntityFrameworkCore.SqlServer": "9.0.2"
         },
         "runtime": {

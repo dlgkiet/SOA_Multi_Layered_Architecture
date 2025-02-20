@@ -9,6 +9,7 @@
       "API/1.0.0": {
         "dependencies": {
           "DataAccessLayer": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "9.0.2",
           "Microsoft.EntityFrameworkCore.SqlServer": "9.0.2",
           "ServiceLayer": "1.0.0",
           "Swashbuckle.AspNetCore": "6.4.0"
@@ -665,6 +666,9 @@
         }
       },
       "CoreLayer/1.0.0": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "9.0.2"
+        },
         "runtime": {
           "CoreLayer.dll": {}
         }
@@ -672,7 +676,6 @@
       "DataAccessLayer/1.0.0": {
         "dependencies": {
           "CoreLayer": "1.0.0",
-          "Microsoft.EntityFrameworkCore": "9.0.2",
           "Microsoft.EntityFrameworkCore.SqlServer": "9.0.2"
         },
         "runtime": {
@@ -682,7 +685,8 @@
       "ServiceLayer/1.0.0": {
         "dependencies": {
           "CoreLayer": "1.0.0",
-          "DataAccessLayer": "1.0.0"
+          "DataAccessLayer": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "9.0.2"
         },
         "runtime": {
           "ServiceLayer.dll": {}
