@@ -25,5 +25,10 @@ namespace SOA_Layered_Arch.ServiceLayer
         {
             return await _movierepositories.GetTopRatedMoviesWithSpAsync(topCount);
         }
+        public async Task<Movie> GetMovieByIdAsync(int id)
+        {
+            return await _movierepositories.GetMovieByIdAsync(id);
+        }
+
     }
 }

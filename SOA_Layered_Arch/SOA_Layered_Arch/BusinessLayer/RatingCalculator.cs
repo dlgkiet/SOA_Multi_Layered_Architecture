@@ -1,4 +1,7 @@
-﻿namespace SOA_Layered_Arch.BusinessLayer
+﻿using SOA_Layered_Arch.CoreLayer.Entities;
+
+namespace SOA_Layered_Arch.BusinessLayer
+ 
 {
     public static class RatingCalculator
     {

@@ -1,6 +1,4 @@
 ﻿using SOA_Layered_Arch.CoreLayer.Entities;
-using System.Collections.Generic;
-using System.Reflection.Emit;
 using Microsoft.EntityFrameworkCore;
 
 namespace SOA_Layered_Arch.DataAccessLayer
@@ -15,19 +13,20 @@ namespace SOA_Layered_Arch.DataAccessLayer
         public AppDbContext(DbContextOptions<AppDbContext> options) :
        base(options)
         { }
-        protected override void OnModelCreating(ModelBuilder
-       modelBuilder)
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<MovieSeriesTag>()
-            .HasKey(mst => new { mst.MovieSeriesId, mst.TagId });
+                .HasKey(mst => new { mst.MovieId, mst.TagId }); // Đổi MovieSeriesId → MovieId
+
             modelBuilder.Entity<MovieSeriesTag>()
-            .HasOne(mst => mst.Movie)
-            .WithMany(m => m.MovieSeriesTags)
-            .HasForeignKey(mst => mst.MovieSeriesId);
+                .HasOne(mst => mst.Movie)
+                .WithMany(m => m.MovieSeriesTags)
+                .HasForeignKey(mst => mst.MovieId); // Đổi MovieSeriesId → MovieId
+
             modelBuilder.Entity<MovieSeriesTag>()
-            .HasOne(mst => mst.Tag)
-            .WithMany(t => t.MovieSeriesTags)
-            .HasForeignKey(mst => mst.TagId);
+                .HasOne(mst => mst.Tag)
+                .WithMany(t => t.MovieSeriesTags)
+                .HasForeignKey(mst => mst.TagId);
         }
     }
-    }
+}
