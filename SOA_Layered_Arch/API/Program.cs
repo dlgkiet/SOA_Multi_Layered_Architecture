@@ -17,9 +17,11 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 
 // Đăng ký Repository
 builder.Services.AddScoped<IRepository<Movie>, MovieRepository>();
+builder.Services.AddScoped<IRepository<MovieSeriesTag>, MovieSeriesTagRepository>();
 
 // Đăng ký Service
 builder.Services.AddScoped<MovieService>();
+builder.Services.AddScoped<MovieSeriesTagService>();
 
 // Cấu hình Controller và Swagger
 builder.Services.AddControllers();

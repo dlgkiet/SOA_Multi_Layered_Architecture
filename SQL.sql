@@ -91,3 +91,22 @@ INSERT INTO Movies (title, genre, ReleaseDate, director, duration, language, cou
 ('Interstellar', 'Sci-Fi', '2014-11-07', 'Christopher Nolan', 169, 'English', 'USA', 'A journey to save humanity from extinction.'),
 ('Titanic', 'Romance', '1997-12-19', 'James Cameron', 195, 'English', 'USA', 'A love story aboard the Titanic ship.'),
 ('Avengers: Endgame', 'Action', '2019-04-26', 'Anthony Russo, Joe Russo', 181, 'English', 'USA', 'Superheroes battle to undo Thanos''s snap.');
+
+
+INSERT INTO Tags (tag_name) VALUES 
+('Sci-Fi'),
+('Action'),
+('Drama'),
+('Romance'),
+('Adventure'),
+('Thriller');
+
+
+INSERT INTO MovieSeriesTags (movie_series_id, tag_id) VALUES
+(1, 1), -- MovieSeriesId = 1, TagId = 1 (Sci-Fi)
+(1, 2), -- MovieSeriesId = 1, TagId = 2 (Action)
+(2, 3), -- MovieSeriesId = 2, TagId = 3 (Drama)
+(2, 4), -- MovieSeriesId = 2, TagId = 4 (Romance)
+(3, 5), -- MovieSeriesId = 3, TagId = 5 (Adventure)
+(3, 6); -- MovieSeriesId = 3, TagId = 6 (Thriller)
+

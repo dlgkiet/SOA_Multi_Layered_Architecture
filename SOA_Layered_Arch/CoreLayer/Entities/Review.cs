@@ -1,5 +1,4 @@
-﻿using MovieDatabase.Models;
-using System.ComponentModel.DataAnnotations.Schema;
+﻿using System.ComponentModel.DataAnnotations.Schema;
 using System.ComponentModel.DataAnnotations;
 
 namespace SOA_Layered_Arch.CoreLayer.Entities
@@ -22,11 +21,6 @@ namespace SOA_Layered_Arch.CoreLayer.Entities
 
         public DateTime ReviewDate { get; set; } = DateTime.Now;
 
-        // Navigation properties
-        [ForeignKey("UserId")]
-        public User User { get; set; }
 
-        [ForeignKey("MovieSeriesId")]
-        public MovieSeries MovieSeries { get; set; }
     }
 }
